@@ -1,0 +1,621 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: Montserrat;
+    src: url(/assets/font/montserrat.regular.ttf) format("ttf");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+    text-align: left;   
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 10.5%;
+    transition: all .50s ease;
+}
+
+.navbar a {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    float: left;
+    height: 50px;
+    margin-right: 10px
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar-menu a:hover {
+    color: brown;
+}
+
+.navbar-menu a.active {
+    color: red;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.user i {
+    color: black;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.main a:hover {
+    color: black;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.wrapper-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25rem;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 0 160px;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: Poppins;
+    color: black;
+}
+
+.menu {
+    float: right;
+}
+
+.kolom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 50%;
+
+}
+
+.kolom_judul{
+    text-align: center;
+    margin: 40px 0 10px 0;
+    font-size: 1.75em;
+}
+
+.kolom2{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 0 5px;
+}
+
+.homelogo{
+    padding-top: 10px;
+}
+
+.kolom .deskripsi {
+    font-size: 22px;
+    font-weight: 1px;
+    /* font-family: 'Poppins'; */
+}
+
+.kolom h3 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 20px;
+    font-size: 48px;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+}
+
+.kolom p {
+    /* margin: 10px 0px; */
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper .home img{
+    width: 90%;
+    /* margin-left: 15px; */
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /* text-align: justify; */
+}
+
+.our-goals {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.left-column {
+    flex: 1;
+    background-color: #585C7B;
+    color: white;
+    padding: 50px 165px 50px 100px;
+}
+
+.left-column h1 {
+    text-align: center;
+}
+
+.left-column p {
+    text-align: justify;
+}
+
+.right-column {
+    flex: 1;
+    background-color: #C47F9B;
+    color: white;
+    padding: 50px 100px 50px 165px;
+}
+
+.right-column p {
+    text-align: justify;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px 165px;
+}
+
+.left-column-content {
+    justify-content: center;
+    flex: 1;
+    color: black;
+    height: 400px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.right-column-content {
+    justify-content: center;
+    flex: 1;
+    color: black;
+    height: 400px;
+    align-items: center;
+    padding-right: 10px;
+    /* margin-right: 35px; */
+}
+
+.left-column-content img {
+    height: 250px;
+}
+
+.right-column-content img {
+    height: 250px;
+} 
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+}
+
+@media (max-height:880px) {
+    footer{
+        position: static;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: white;
+    font: normal 36px 'Poppins', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #C47F9B;
+    font: normal 36px 'Poppins', cursive;
+}
+
+.footer-distributed .footer-links {
+    color: white;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i .fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #C47F9B;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3f71ea;
+}
+
+.footer-links a:hover {
+    color: #C47F9B;
+}
+
+@media(max-width: 880px){
+    .footer-distributed .footer-links, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+a.tbl-hitam {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #585C7B;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    width: 122px;
+    font-weight: bold;
+}
+
+a.tbl-hitam:hover {
+    background: #C47F9B;
+    text-decoration: none;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 140px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .product img {
+    width: 90%;
+    border-radius: 15px 0px 15px 0px;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .product p {
+    margin-top: 3px;
+    font-size: 11px;
+    color: #5a5454;
+    text-align: justify;
+  }
+
+.halallogo {
+    width: 30px;
+}
+
+.product h4 {
+    color:rgb(59, 59, 59);
+    font-size: 13px;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.product span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: flex-end;
+    padding: 2px 0px 5px;
+}
+
+.product-container{
+    display: flex;
+    /* align-content: center; */
+}
+
+.sosmed {
+    display: flex;
+    align-items: left;
+
+}
+
+.sosmed li {
+    margin: 0 30px;
+}
+
+.sosmed a {
+    text-decoration: none;
+    color: black;
+}
+
+.sosmed a i {
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.sosmed a:hover i {
+    color: #585C7B;
+}
+
+@media (max-width: 1280px) {
+    header {
+        transition: 14px 2%;
+        padding: 14px 2%
+    }
+
+    .navbar-menu a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        transition: 14px 2%;
+        padding: 14px 2%
+    }
+
+    .navbar-menu a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background-color: silver;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar-menu a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .050s ease;
+    }
+
+    .navbar-menu a:hover {
+        color: black;
+        transform: translateY(5px);
+    }
+
+    .navbar-menu a.active{
+        color: black;
+    }
+
+    .navbar-menu.open {
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: block;
+    }
+
+
+}
